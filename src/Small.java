@@ -20,10 +20,13 @@ public class Small {
 		for (int counter = 1; counter <= integers; counter++) {
 			System.out.print("Enter integer: ");
 			number = input.nextInt();
+			// captures initial input as smallest value
 			if (counter == 1) {
 				smallest = number;
-			} else if (number < smallest) {
-				smallest = number;
+			}
+			// compares number on subsequent iterations against smallest
+			else if (number < smallest) {
+				smallest = number; // replaces smallest if new number is smaller
 			}
 		}
 
