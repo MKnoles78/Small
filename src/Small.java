@@ -17,6 +17,13 @@ public class Small {
 		System.out.print("Enter number of integers: ");
 		integers = input.nextInt();
 
+		for (int counter = 1; counter <= integers; counter++) {
+			System.out.print("Enter integer: ");
+			number = input.nextInt();
+
+		}
+
+		System.out.printf("Smallest Integer is: %d%n", smallest);
 	}
 
-}
+} // end class Small
